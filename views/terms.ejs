@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  
+      body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+                 text-align: center;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Değişiklik burada: min-height kullanarak ekran boyutuna bağlı olarak otomatik uzama yapmasını sağlıyoruz. */
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      max-width: 500px;
+      width: 90%; /* Değişiklik burada: Kutuların genişliğini ayarladık. */
+    }
+    
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #555;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+      line-height: 1.5;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+ <h2><%= title %></h2>    
+
+    </div>
+
+    <div class="box">
+      <h2>1. Bot Kullanımı</h2>
+      <p>
+        a. Botumuz sadece eğlence amacıyla kullanılmalıdır. Herhangi bir kötüye kullanım, spam veya rahatsızlık yaratmak yasaktır.
+        <br> <p>
+
+        b. Botumuzun sunmuş olduğu müzik hizmetleri, yalnızca yasal ve telif hakkıyla korunan içerikler için kullanılabilir.
+      </p>
+     <p>
+ c. Botun sahipleri botun yanlış kullandığını tespit ederse yanlış kullanan kişi sebep göstermeksizin karalisteye alınabilir ve sahipler tarafından affedilmediği sürece o kişi botu kullanamaz.      </p>
+    </div>
+    <div class="box">
+      <h2>2. Sorumluluk Reddi</h2>
+      <p>
+        a. Bot, herhangi bir şekilde olası hatalar veya kesintiler nedeniyle doğrudan veya dolaylı olarak meydana gelen zararlar için sorumlu tutulamaz.
+        <br><p>
+
+        b. Bot, sunulan hizmetlerdeki değişiklikleri önceden bildirmeksizin yapma hakkını saklı tutar.
+      </p>
+    </div>
+    <div class="box">
+      <h2>3. Veri Gizliliği</h2>
+      <p>
+        a. Bot, sunucu verilerinizi saklama veya kullanma hakkına sahip değildir. Her türlü veri saklama veya kullanma işlemi sunucu sahipleri veya yöneticileri tarafından gerçekleştirilir.
+      </p>
+    </div>
+    <div class="box">
+      <h2>4. Değişiklikler ve Güncellemeler</h2>
+      <p>
+        a. Bu Kullanım Koşulları zaman zaman güncellenebilir ve değiştirilebilir. Kullanıcılarımızın düzenli olarak bu koşulları kontrol etmeleri tavsiye edilir.
+      </p>
+      <p>
+        b. Bu Kullanım Koşulları, Botun kullanımınız sırasında uymalı olduğunuz temel kuralları ve şartları açıklar. Botumuzu kullanarak bu koşulları kabul etmiş olursunuz. Lütfen bu koşullara uymamızı sağlamak için sorumlu bir şekilde davranın.
+      </p>
+    </div>
+      <div class="box">
+  <h2>5. Kullanıcı Katkıları ve İçerik Paylaşımı</h2>
+  <p>
+    a. Botumuzu kullanarak veya platformumuzda içerik paylaşarak, kullanıcı olarak kendi sorumluluğunuzda bulunan içerikleri oluşturabilirsiniz. Ancak, bu içeriklerin yasalara ve ahlaki normlara uygun olmasına özen göstermelisiniz.
+    <br><p>
+
+b. Botumuzu kullanarak veya platformumuzda içerik paylaşarak, paylaştığınız içeriklerin telif hakkı veya diğer fikri mülkiyet haklarına saygı göstermelisiniz. Başkalarının haklarına zarar veren veya izinsiz içerik kullanımına izin veren içerikler paylaşmaktan kaçınmalısınız.
+  </p>
+</div>
+      
+  </div>
+</body>
+</html>

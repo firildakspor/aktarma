@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  
+      body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+                 text-align: center;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Değişiklik burada: min-height kullanarak ekran boyutuna bağlı olarak otomatik uzama yapmasını sağlıyoruz. */
+    }
+
+    .box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 5px;
+      margin: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      max-width: 500px;
+      width: 90%; /* Değişiklik burada: Kutuların genişliğini ayarladık. */
+    }
+    
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+      color: #555;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #777;
+      line-height: 1.5;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+ <h2><%= title %></h2>    
+
+    </div>
+
+    <div class="box">
+      <h2>Saklanan Verileriniz</h2>
+       </p>
+     <p>
+a. Komut Kullanılarak Saklanılan Veriler
+        <br>
+• Kullanıcı ID'si
+      <br>
+• Kullanılan sunucu ID'si
+        <br>
+• Kullanıcının Kurduğu Sistemler
+        <br>
+• Kategori ID,Ticket Kanalı ID,Ticket Log Kanalı ID   
+            <br>
+        <br>
+
+b. Otomatik Saklanılan Veriler
+               <br>
+
+• Sunucu:ID'si, ismi, profil fotoğrafı, üye sayısı, sunucu sahibi, kanal sayısı, bot eklenme tarihi.
+               <br>
+
+• Üye:ID'si, ismi.
+    </div>
+    <div class="box">
+      <h2>Verilerinizin Korunumu</h2>
+      <p>
+a. Verileriniz, şifrelenme yöntemiyle, erişime kısıtlı bir veri tabanlarında saklanır. Verileriniz hakkında bir endişeniz veya sorunuz bulunmaktaysa, bilet oluşturarak yardım alabilirsiniz.        <br><p>
+
+      </p>
+    </div>
+    <div class="box">
+      <h2>Verilerinizin Silinimi</h2>
+      <p>
+a. Verilerinizin silinmesi hakkında talep oluşturmakta özgürsünüz. Verilerinizin tamamen silinmesi için talep isteğinizi destek sunucumuz üzerinden destek talebi açarak iletebilirsiniz. Talebiniz, alındıktan 30 gün içinde işleme alınır.      </p>
+    </div>
+    
+      
+  </div>
+</body>
+</html>
